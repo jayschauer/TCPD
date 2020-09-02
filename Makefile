@@ -46,7 +46,7 @@ validate: venv collect $(UTIL_DIR)/validate_dataset.py ./schema.json
 # Utility commands #
 ####################
 
-export: test
+export:#test
 	mkdir -p $(EXPORT_DIR)
 	cp -v $(DATA_DIR)/*/*.json $(EXPORT_DIR)
 
